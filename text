@@ -1,0 +1,36 @@
+#sala_de_aula = ["luis", "pedro", "fernando"]
+
+#sala_de_aula.append("carlos")
+
+#sala_de_aula.insert(2, "nanci")
+
+#sala_de_aula.remove("pedro")
+
+#for nome in sala_de_aula:
+ # print("esse é o aluno", nome)
+
+
+lista_de_pessoas = [ 
+      { "nome": "João", "idade": 30, "cidade": "São Paulo"},
+      {"nome": "Maria", "idade": 25, "cidade": 
+          "Rio de Janeiro"},
+      {"nome": "Pedro", "idade": 35,  
+        "cidade":"Belo Horizonte"}
+]
+
+nome_procurado = input("Coloque o nome na busca: ")  
+
+for pessoa in lista_de_pessoas:
+  if pessoa["nome"] == nome_procurado:
+       print(f"A idade de {nome_procurado} é {pessoa['idade']}, e a cidade é {pessoa['cidade']} ")
+
+print("Pessoa com menos de 30")
+for pessoa in lista_de_pessoas:
+    if pessoa["idade"] <= 30:
+        print(pessoa["nome"])
+
+
+
+
+
+
